@@ -33,9 +33,6 @@ uint32_t AnveHashMap_Hash(const char *key)
 {
 	uint32_t result = 0;
 	for (int i = 0; key[i] != '\0'; ++i)
-	{
 		result = result * 37 ^ key[i];
-		i++;
-	}
 	return result;
 }

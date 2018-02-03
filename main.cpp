@@ -15,6 +15,7 @@
 	along with this program.If not, see <https://www.gnu.org/licenses/>.
 ==============================================================================*/
 
+#include <cstring>
 #include <string>
 #include <cstdio>
 #include <unordered_map>
@@ -80,7 +81,7 @@ static const Tester::hash_function_info_t hash_functions[] =
 };
 
 
-int main(int *argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	bool success = true;
 	if (!(success = Tester::LoadDictionary("../words_alpha.txt", (size_t)31)))
